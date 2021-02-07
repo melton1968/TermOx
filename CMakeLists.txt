@@ -62,3 +62,8 @@ add_subdirectory(demos)
 
 # Add Tests
 add_subdirectory(tests)
+
+set(LIB_PATH "${CMAKE_CURRENT_SOURCE_DIR}")
+set(LIB_FILE "${LIB_PATH}/external/ncurses-snapshots/output/lib/libncursesw.a")
+install(FILES ${LIB_FILE} TYPE LIB)
+install(DIRECTORY external/signals-light/include/signals_light TYPE INCLUDE)

@@ -99,3 +99,6 @@ target_sources(TermOx
         terminal/input.cpp
         terminal/dynamic_color_engine.cpp
 )
+
+install(TARGETS TermOx)
+install(DIRECTORY ../include/termox TYPE INCLUDE)
